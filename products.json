@@ -1,0 +1,102 @@
+[
+{
+"id": "orange-fresh-juice",
+"name": "Orange Fresh Juice",
+"mood": "fresh",
+"type": "juice",
+"size": "250ml",
+"price": 65,
+"image": "images/fresh.jpg",
+"description": "น้ำส้มคั้นสดรสเปรี้ยวหวานกลมกล่อม เติมความสดชื่นโปร่งสบายให้ทุกเช้าของคุณ"
+},
+{
+"id": "lemon-tea-fresh",
+"name": "Lemon Tea Fresh",
+"mood": "fresh",
+"type": "tea",
+"size": "250ml",
+"price": 55,
+"image": "images/fresh.jpg",
+"description": "ชามะนาวรสเข้มข้นลงตัว มอบความตื่นตัวและกระปรี้กระเปร่าในยามบ่าย"
+},
+{
+"id": "cold-brew-coffee",
+"name": "Cold Brew Coffee",
+"mood": "focus",
+"type": "coffee",
+"size": "250ml",
+"price": 85,
+"image": "images/focus.jpg",
+"description": "กาแฟสกัดเย็นรสสัมผัสเรียบนุ่ม ดื่มง่าย ช่วยสร้างสมาธิให้พร้อมลุยทุกความคิดสร้างสรรค์"
+},
+{
+"id": "matcha-latte",
+"name": "Matcha Latte",
+"mood": "focus",
+"type": "tea",
+"size": "250ml",
+"price": 95,
+"image": "images/focus.jpg",
+"description": "มัทฉะแท้เกรดพรีเมียมผสานนมรสละมุน เติมพลังความโฟกัสที่สงบนิ่งและยาวนาน"
+},
+{
+"id": "americano-cold-brew",
+"name": "Americano Cold Brew",
+"mood": "focus",
+"type": "coffee",
+"size": "250ml",
+"price": 75,
+"image": "images/focus.jpg",
+"description": "อเมริกาโน่สกัดเย็นเข้มสะใจ ไร้ความหวาน คืนความตื่นตัวให้พร้อมรับทุกความท้าทาย"
+},
+{
+"id": "earl-grey-milk-tea",
+"name": "Earl Grey Milk Tea",
+"mood": "relax",
+"type": "tea",
+"size": "250ml",
+"price": 75,
+"image": "images/relax.jpg",
+"description": "ชานมเอิร์ลเกรย์หอมกลิ่นเบอร์กาม็อตนุ่มนวล ช่วยเปลี่ยนวันวุ่นวายให้ผ่อนคลายเป็นพิเศษ"
+},
+{
+"id": "chamomile-tea",
+"name": "Chamomile Tea",
+"mood": "relax",
+"type": "tea",
+"size": "250ml",
+"price": 65,
+"image": "images/relax.jpg",
+"description": "ชาคามอมมายล์กลิ่นหอมละมุน ปลอบประโลมความเหนื่อยล้าให้ใจได้พักอย่างสมบูรณ์แบบ"
+},
+{
+"id": "cocoa-special",
+"name": "Cocoa Special",
+"mood": "relax",
+"type": "tea",
+"size": "250ml",
+"price": 80,
+"image": "images/relax.jpg",
+"description": "โกโก้เข้มข้นสไตล์โฮมเมด มอบความอุ่นใจและรสสัมผัสนุ่มลึกในทุกจิบ"
+},
+{
+"id": "berry-smoothie",
+"name": "Berry Smoothie",
+"mood": "romance",
+"type": "juice",
+"size": "250ml",
+"price": 89,
+"image": "images/romance.jpg",
+"description": "สมูทตี้มิกซ์เบอร์รี่รสหวานซ่อนเปรี้ยว เติมสีสันและความสดใสน่ารักให้ทุกวันของคุณ"
+},
+{
+"id": "peach-tea",
+"name": "Peach Tea",
+"mood": "romance",
+"type": "tea",
+"size": "250ml",
+"price": 79,
+"image": "images/romance.jpg",
+"description": "ชาพีชกลิ่นหอมหวานละมุน ชวนให้สัมผัสถึงความอบอุ่นและช่วงเวลาอันน่าประทับใจ"
+}
+]
