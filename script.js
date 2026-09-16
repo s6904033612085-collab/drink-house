@@ -1,6 +1,6 @@
 // Main Unified JavaScript for Drink House Website
 
-// 1. EMBEDDED PRODUCTS DATA
+// 1. EMBEDDED PRODUCTS DATA (Direct Vercel-compatible image paths)
 const PRODUCTS_DATA = [
 {
 id: 1,
@@ -178,11 +178,14 @@ return;
 container.innerHTML = filtered.map(item => {
 const itemNameWithSize = item.size ? `${item.name} ${item.size}` : item.name;
 const orderUrl = `order.html?item=${encodeURIComponent(itemNameWithSize)}&price=${encodeURIComponent(item.price)}`;
+const pngFallbackUrl = item.image.replace('.jpg', '.png');
 
 return `
 <div class="product-card">
 <div class="product-image-wrap">
-<img src="${item.image}" alt="${item.name}">
+<img src="${item.image}"
+alt="${item.name}"
+onerror="if (!this.getAttribute('data-tried-png')) { this.setAttribute('data-tried-png', 'true'); this.src='${pngFallbackUrl}'; }">
 </div>
 <div class="product-info">
 <div class="product-header">
@@ -262,8 +265,6 @@ throw new Error(`HTTP error! status: ${response.status}`);
 }
 
 const data = await response.json();
-
-// รองรับโครงสร้างทั้ง Array of Arrays และ Array of Objects
 let rows = Array.isArray(data) ? data : (data.orders || data.data || []);
 
 if (rows.length === 0) {
@@ -277,15 +278,12 @@ tableBody.innerHTML = `
 return;
 }
 
-// หากแถวแรกเป็น Header ให้ตัดออก
 if (Array.isArray(rows[0]) && (rows[0][0] === 'วันเวลา' || rows[0][0] === 'Timestamp')) {
 rows.shift();
 }
 
-// เรียงรายการล่าสุดขึ้นก่อน
 const reversedRows = [...rows].reverse();
 
-// Render ข้อมูลลงตาราง
 tableBody.innerHTML = reversedRows.map(item => {
 let timestamp, customerName, contact, items, total, note;
 
