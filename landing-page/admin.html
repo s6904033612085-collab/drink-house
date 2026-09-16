@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>รายการสั่งซื้อ (Admin) - Drink House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header style="padding: 24px; text-align: center; border-bottom: 1px solid #eee;">
+<h1 style="margin: 0 0 8px 0;">Drink House - Admin Dashboard</h1>
+<p style="margin: 0; color: #666;">ระบบจัดการและตรวจสอบรายการสั่งซื้อ</p>
+</header>
+
+<main style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+<h2>รายการสั่งซื้อทั้งหมด</h2>
+<button onclick="location.reload();" class="btn" style="padding: 8px 16px; cursor: pointer;">🔄 อัปเดตข้อมูล</button>
+</div>
+
+<div style="overflow-x: auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+<table id="ordersTable" style="width: 100%; border-collapse: collapse; text-align: left;">
+<thead>
+<tr style="background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;">
+<th style="padding: 16px;">วันเวลา</th>
+<th style="padding: 16px;">ชื่อลูกค้า</th>
+<th style="padding: 16px;">เบอร์โทร/Line</th>
+<th style="padding: 16px;">รายการสินค้า</th>
+<th style="padding: 16px;">จำนวนเงินรวม</th>
+<th style="padding: 16px;">หมายเหตุ</th>
+</tr>
+</thead>
+<tbody>
+<!-- ข้อมูลคำสั่งซื้อจาก Google Sheets CSV จะถูกสร้างและแสดงผลผ่าน script.js -->
+</tbody>
+</table>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>สั่งซื้อสินค้า - Drink House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Navigation -->
+<header class="header">
+<div class="container nav">
+<a href="index.html" class="logo">Drink House</a>
+<nav>
+<ul class="nav-links">
+<li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+<li><a href="product.html" class="nav-link">เมนูทั้งหมด</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- Main Order Form Section -->
+<main class="section container" style="padding-top: 140px;">
+<div class="section-title-wrap">
+<h1 class="section-title">ฟอร์มสั่งซื้อสินค้า</h1>
+<p>กรอกข้อมูลรายละเอียดการสั่งซื้อของคุณ เพื่อให้เราตระเตรียมรสชาติที่ใช่ส่งตรงถึงคุณ</p>
+</div>
+
+<div class="order-form-container">
+<form id="orderForm" class="order-form">
+<div class="form-group">
+<label for="customerName" class="form-label">ชื่อลูกค้า <span class="required">*</span></label>
+<input type="text" id="customerName" class="form-input" placeholder="ระบุชื่อ-นามสกุลของคุณ" required>
+</div>
+
+<div class="form-group">
+<label for="contact" class="form-label">เบอร์โทรศัพท์ / Line ID <span class="required">*</span></label>
+<input type="text" id="contact" class="form-input" placeholder="08X-XXX-XXXX หรือ Line ID" required>
+</div>
+
+<div class="form-group">
+<label for="items" class="form-label">รายการสินค้า <span class="required">*</span></label>
+<textarea id="items" class="form-textarea" rows="4" placeholder="ระบุรายการสินค้าที่ต้องการสั่งซื้อ เช่น Orange Fresh Juice x 2" required></textarea>
+</div>
+
+<div class="form-group">
+<label for="total" class="form-label">จำนวนเงินรวม (บาท) <span class="required">*</span></label>
+<input type="number" id="total" class="form-input" placeholder="เช่น 130" min="0" required>
+</div>
+
+<div class="form-group">
+<label for="note" class="form-label">หมายเหตุเพิ่มเติม</label>
+<textarea id="note" class="form-textarea" rows="3" placeholder="เช่น ระดับความหวาน, คำขอพิเศษอื่นๆ (ถ้ามี)"></textarea>
+</div>
+
+<div class="form-action">
+<button type="submit" class="btn btn-gold btn-submit">ยืนยันสั่งซื้อ</button>
+</div>
+</form>
+</div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container" style="text-align: center;">
+<p class="logo" style="font-size: 1.25rem; margin-bottom: 8px;">Drink House</p>
+<p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Drink House. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

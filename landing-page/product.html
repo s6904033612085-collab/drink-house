@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เมนูทั้งหมด - Drink House</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header Navigation -->
+<header class="header">
+<div class="container nav">
+<a href="index.html" class="logo">Drink House</a>
+<nav>
+<ul class="nav-links">
+<li><a href="index.html" class="nav-link">หน้าแรก</a></li>
+<li><a href="product.html" class="nav-link active">เมนูทั้งหมด</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- Main Product Section -->
+<main class="section container" style="padding-top: 140px;">
+<div class="section-title-wrap">
+<h1 class="section-title">เมนูเครื่องดื่มของเรา</h1>
+<p>เลือกสรรเครื่องดื่มที่เหมาะกับ Mood ของคุณในวันนี้</p>
+</div>
+
+<!-- Filter Bar Container (Script.js will render buttons here) -->
+<div id="filter-bar" class="filter-bar"></div>
+
+<!-- Product Grid Container (Script.js will render products here) -->
+<div id="product-list" class="product-grid"></div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container" style="text-align: center;">
+<p class="logo" style="font-size: 1.25rem; margin-bottom: 8px;">Drink House</p>
+<p style="font-size: 0.85rem; color: var(--text-muted);">&copy; 2026 Drink House. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
